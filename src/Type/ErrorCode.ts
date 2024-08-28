@@ -1,0 +1,4 @@
+export enum EnumErrorCode
+{
+	INVALID_DATE_TIME_STRING = 'INVALID_DATE_TIME_STRING',
+}
