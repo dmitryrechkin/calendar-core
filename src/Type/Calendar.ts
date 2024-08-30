@@ -25,7 +25,7 @@ export const calendarNamesSchema = z.object({
 });
 
 export const dateTimeStringSchema = z.object({
-	dateTimeString: z.string().describe('A date and time string including timezone in various formats, including ISO 8601, natural language expressions (e.g., "Tomorrow at 7am", "Next Friday"), and specific date ranges (e.g., "17 August 2013 - 19 August 2013")')
+	dateTimeString: z.string().describe('A date and time string with a fixed UTC offset, supporting ISO 8601, natural language expressions like “tomorrow at 7am,” “next Friday,” and date ranges, without reliance on timezone names like America/Vancouver.')
 });
 
 
