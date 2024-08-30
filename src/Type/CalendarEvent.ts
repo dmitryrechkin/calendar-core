@@ -91,7 +91,7 @@ export const calendarEventWhenSchema = z.union([
 
 export const calendarEventSchema = z.object({
 	id: z.string().optional().describe('A unique identifier for the event.'),
-	calendarId: z.string().optional().describe('The ID of the calendar that the event belongs to.'),
+	calendarId: z.string().describe('The ID of the calendar that the event belongs to.'),
 	busy: z.boolean().describe('If true, shows the event\'s time block as "busy" on shared or public calendars.'),
 	capacity: z.number().optional().describe('The maximum number of participants that may attend the event.'),
 	conferencing: calendarEventConferenceSchema.optional().describe('An object that allows you to automatically create a conference or enter conferencing details manually.'),
